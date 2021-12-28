@@ -14,6 +14,9 @@ p{
     font-family: 'Poppins', sans-serif;
     color: #777E90;
 }
+a:hover{
+    text-decoration: none;
+}
 
 /* Button */
 
@@ -22,12 +25,16 @@ p{
     background-color:#3772FF; 
     border-radius: 20px;color: white; 
     border: none;
+    cursor: pointer;
+    transition: all .8s ease-in-out;
 }
 .btn2{
     border-radius: 20px;
     padding:8px 15px; 
     border:none;
     margin-left: 10px;
+    transition: all .8s ease-in-out;
+    cursor: pointer;
 }
 .btn3{
     padding:10px 30px;
@@ -35,6 +42,8 @@ p{
     border-radius:20px;
     border: none; 
     color:#FFFFFF;
+    transition: all .8s ease-in-out;
+    cursor: pointer;
 }
 .btn4{
     border-radius: 20px;
@@ -44,6 +53,8 @@ p{
    background: none;
     box-shadow: 0 0 0 2px #e6e8ec inset;
     color: #23262F;
+    transition: all .8s ease-in-out;
+    cursor: pointer;
 }
 .btn5{
     border-radius: 20px;
@@ -53,6 +64,17 @@ p{
    background: none;
     box-shadow: 0 0 0 2px #e6e8ec inset;
     color: #23262F;
+    transition: all .8s ease-in-out;
+    cursor: pointer;
+}
+.btn2:hover,.btn4:hover,.btn5:hover{
+    background: #23262F;
+    box-shadow: 0 0 0 2px #23262f inset;
+    color: #FCFCFD;
+}
+
+.btn1:hover,.btn3:hover{
+    background: #0f2d74;
 }
 
 
@@ -290,3 +312,98 @@ p{
 }
 }
 /* End Caraousel */
+
+/* Market trend */
+
+.trend__table {
+    display: table;
+    width: 100%;
+}
+.trend__row {
+    display: table-row;
+    color: #23262F;
+}
+.trend__row:first-child .trend__col {
+    padding: 24px 16px;
+    border-bottom: 1px solid #E6E8EC;
+    color: #777E90;
+}
+.trend__col {
+    display: table-cell;
+    
+}
+.trend__row:not(:first-child) {
+    border-radius: 12px;
+    
+}
+.trend__row {
+    display: table-row;
+    color: #23262F;
+}
+.trend__row:not(:first-child) .trend__col:first-child {
+    border-radius: 12px 0 0 12px;
+    color: #777E90;
+}
+.trend__row:not(:first-child) .trend__col {
+    vertical-align: middle;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+.trend__col {
+    display: table-cell;
+    padding: 20px 16px;
+}
+.trend__item {
+    display: flex;
+    align-items: center;
+}
+.trend__icon {
+    flex-shrink: 0;
+    width: 40px;
+    margin-right: 32px;
+}
+.trend__currency {
+    margin-left: 12px;
+    color: #B1B5C3;
+}
+
+/* End Market trend */
+
+/* Footer */
+
+.footer__foot {
+    padding: 25px 0 20px;
+    border-top: 1px solid #E6E8EC;
+}
+.footer__center {
+    display: flex;
+}
+.center {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 80px;
+}
+.footer__copyright {
+    margin-right: auto;
+    font-size: 12px;
+    line-height: 1.66667;
+    color: #777E90;
+}
+.footer__socials {
+    display: flex;
+}
+.footer__social:not(:last-child) {
+    margin-right: 24px;
+}
+.footer__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+}
+
+/* End Footer */
