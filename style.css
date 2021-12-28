@@ -257,3 +257,36 @@ p{
     }
 }
 /* End Trade Anywher */
+
+/* Start Caraousel */
+
+.carousel-sec {
+    background: #f4f5f6;
+}
+.carousel-sec h5{
+    font-size:48px;
+    font-weight:bold;
+    font-family: 'DM Sans', sans-serif;
+    
+}
+.carousel-sec .content {
+    margin-top: 150px;
+    
+}
+.carousel-sec .carousel-btn{
+    margin-top: 60px;
+}
+.carousel-control-prev-icon {
+    margin-left: -140px;
+}
+.carousel-control-next-icon {
+    margin-right: -140px;
+}
+@media screen and (max-width:600px){
+.carousel-sec .img-sec img{
+    width: 250px;
+    height: 250px;
+    margin-top: 30px;
+}
+}
+/* End Caraousel */
