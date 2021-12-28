@@ -1,6 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Sans:wght@400;500;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
 }
+
+
+p{
+    font-family: 'Poppins', sans-serif;
+    color: #777E90;
+}
+
+/* Button */
+
+.btn1{
+    padding: 8px 15px; 
+    background-color:#3772FF; 
+    border-radius: 20px;color: white; 
+    border: none;
+}
+.btn2{
+    border-radius: 20px;
+    padding:8px 15px; 
+    border:none;
+    margin-left: 10px;
+}
+.btn3{
+    padding:10px 30px;
+    background:#3772FF; 
+    border-radius:20px;
+    border: none; 
+    color:#FFFFFF;
+}
+.btn4{
+    border-radius: 20px;
+    padding:10px 25px; 
+    border:none;
+   font-size: 18px;
+   background: none;
+    box-shadow: 0 0 0 2px #e6e8ec inset;
+    color: #23262F;
+}
+.btn5{
+    border-radius: 20px;
+    padding:10px 25px; 
+    border:none;
+   font-size: 16px;
+   background: none;
+    box-shadow: 0 0 0 2px #e6e8ec inset;
+    color: #23262F;
+}
+
+
+.negative-btn{
+    /* display: inline-block; */
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    /* line-height: 1.66667; */
+    font-weight: 600;
+    color: #FCFCFD;
+    background-color: #ff6838;
+
+}
+.positive-btn{
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    /* line-height: 1.66667; */
+    font-weight: 600;
+    color: #FCFCFD;
+    background-color: #58bd7d;
+}
+/* End Button */
+
+/* Start Showcase */
+.showcase h1{
+    font-size:64px;
+    padding-top: 150px;
+    font-family: 'DM Sans', sans-serif;
+  
+}
+
+@media screen and (max-width:600px) {
+    .showcase h1{
+        padding-top: 0px;
+        font-size:38px;
+    }
+    .showcase-img img{
+        width: 350px;
+        height: 350px;
+    }
+}
+
+/* End Showcase */
+
+
+/* Bitcoin Price Start */
+
+.pricing-card{
+    background: #f4f5f6;
+    border-radius: 24px;
+}
+.pricing-card .content:hover{
+    box-shadow: 0px 64px 64px -48px rgb(15 15 15 / 10%);
+    background: #FCFCFD;
+    border-radius: 24px;
+}
+
+/* End Bitcoin Price */
+
+
+/* Start Learn Crypto */
+
+.learn-crypto-sec h2{
+    font-family: 'DM Sans', sans-serif ;
+    font-size:48px ;
+    
+}
+.Learn-crypto nav ul li a{
+    /* margin-right: 40px; */
+    color: #777E90;
+} 
+.nav__link {
+    display: flex;
+    padding: 6px 12px;
+    border-radius: 14px;
+    background: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.14286;
+    font-weight: 700;
+    color: #fff;
+    transition: all .2s;
+}
+.nav__link.active {
+    background: #353945;
+    color: #fff !important;
+}
+.nav__link.active a{
+    color: #fff;
+}
+.Learn-crypto .img-sec img{
+    border-radius: 24px;
+}
+.date{
+    font-size:14px; margin-top:95px
+}
+
+@media screen and (max-width:600px) {
+    .learn-crypto-sec h2{
+        font-size:32px;
+        text-align: center;
+    }
+    .learn-crypto-sec button{
+        display: none;
+    }
+    .img-sec img{
+        width: 330px;
+        height: 350px;
+    }
+    .first-card{
+        padding-left: 0px !important;
+    }
+    .first-card img{
+        width: 150px;
+        height: 150px;
+    }
+    .date{
+        margin: 0;
+    }
+}
+/* End Learn Crypto */
+
+
+/* Start Crypto Trader */
+
+.crypto-trader h4{
+    font-size:48px;
+    font-family: 'DM Sans' sans-serif;
+}
+
+/* End Crypto Trader */
+
+
+
+/* Trade Anywher */
+.trade-anywhere h5{
+    font-size:48px;
+    font-family: 'DM Sans' sans-serif;
+}
+.trade-anywhere .download__list {
+    max-width: 348px;
+}
+.download__item {
+    display: flex;
+    align-items: center;
+}
+.download__list a{
+    text-decoration: none;
+}
+.download__item:not(:last-child) {
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #E6E8EC;
+}
+.download__icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 56px;
+    height: 56px;
+    margin-right: 24px;
+    border-radius: 50%;
+    background: #23262F;
+}
+.download__icon:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #3772FF url('./img/download.svg') no-repeat 50% 50%/14px auto;;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s;
+}
+.download__details {
+    flex-grow: 1;
+}
+.download__content {
+    color: #777E90;
+}
+.download__subtitle {
+    font-size: 24px;
+    line-height: 1.33333;
+    letter-spacing: -.01em;
+    color: #23262F;
+}
+.download__item:hover .download__icon:after {
+    opacity: 1;
+    visibility: visible;
+}
+@media screen and (max-width:600px){
+    .trade-anywhere .img-sec img{
+        width: 330px;
+        height: 350px;
+    }
+}
+/* End Trade Anywher */
