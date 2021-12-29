@@ -8,10 +8,13 @@
     box-sizing: border-box;
     /* overflow-x: hidden; */
 }
-
-section{
-    overflow-x: hidden;
+@media screen and (max-width:600px) {
+    section{
+    overflow: hidden;
+    
 }
+}
+
 p{
     font-family: 'Poppins', sans-serif;
     color: #777E90;
