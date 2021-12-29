@@ -9,7 +9,9 @@
     /* overflow-x: hidden; */
 }
 
-
+section{
+    overflow-x: hidden;
+}
 p{
     font-family: 'Poppins', sans-serif;
     color: #777E90;
